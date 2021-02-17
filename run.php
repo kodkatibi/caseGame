@@ -1,9 +1,9 @@
 <?php
 include './includes/function.php';
-include './includes/login.php';
+include './includes/user.php';
 
-$login = new login();
-$login->getName();
+$user = new user();
+$user->getName();
 
 
 $mainFunction = new func();
@@ -21,17 +21,15 @@ print_r($result . PHP_EOL);
 
 for ($i = 0; $i < 3; $i++) {
     if (($reelsets[0][$i] == $reelsets[1][$i] && $reelsets[1][$i] == $reelsets[2][$i]) || ($reelsets[1][$i] == $reelsets[2][$i] && $reelsets[2][$i] == $reelsets[3][$i])) {
-        $login->point += 5 * $reelsets[2][$i];
-    } else {
-        print_r('olmadı' . PHP_EOL);
+        $user->point += 5 * $reelsets[2][$i];
     }
 }
-print_r("Again?");
+print_r("Try Again?");
 $again = readline('y or n: ' . PHP_EOL);
 
 if ($again == 'y') {
-    print_r('Again');
+    exec('php ./run.php');
 } else {
-    echo 'Total Point: ' . $login->point . PHP_EOL;
-    echo $login->name . ' bye bye' . PHP_EOL;
+    echo 'Total Point: ' . $user->point . PHP_EOL;
+    echo $user->name . ' bye bye' . PHP_EOL;
 }
