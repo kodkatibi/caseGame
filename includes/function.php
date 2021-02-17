@@ -21,7 +21,7 @@ class func
 
         for ($i = 0; $i < 4; $i++) {
             for ($j=0;$j<3;$j++){
-                $this->winnerSlot[$i.'. reel'][] = $reels[rand(0, 49)]%6;
+                $this->winnerSlot[$i][] = $reels[rand(0, 49)]%5+1;
             }
         }
         return $this->winnerSlot;

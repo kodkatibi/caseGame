@@ -4,20 +4,21 @@ Make a slot game simulation containing 4 spinning reels. Each reel should have t
 
 ## How can i use
 
-Download source
+**Download source**
 
 ```git
 git clone https://github.com/kodkatibi/caseGame.git
 ```
 
-open directory
+**open directory**
 
 ```bash
-cd caseGame
+cd path/to/directory/caseGame
 ```
 
-Run on terminal
+**Run on terminal**
 
 ```bash
 php index.php
 ```
+
