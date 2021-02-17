@@ -19,6 +19,6 @@ cd path/to/directory/caseGame
 **Run on terminal**
 
 ```bash
-php index.php
+php run.php
 ```
 
